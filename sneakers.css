@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inconsolata:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 70px;
+}
+  
+  /*header*/
+.header {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+} 
+
+.header-links {
+    display: flex;
+    gap: 3rem;
+}
+  
+.header-link {
+    list-style-type: none;
+}
+  
+.header_link-wrapper {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+  
+.header_link-wrapper:hover {
+    color: orangered;
+    transition: 500ms;
+}
+  
+.header_menu-container {
+    display: none;
+}
+
+.sneakers-model {
+    background-color: #ffffff;
+    height: auto;
+    text-align: center;
+}
+
+/*nike sneakers section*/
+.nike-sneakers_section {
+    display: flex;
+    column-gap: 3rem;
+    margin: 5rem 0;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.adidas-sneakers_section {
+    display: flex;
+    column-gap: 3rem;
+    margin: 5rem 0;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    justify-content: center;
+}
+
+.discount {
+    width: 50px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.icon-favorite {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: solid white;
+    border-radius: 7px;
+}
+
+.sneaker-card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    border: solid rgb(245, 245, 245) 5px;
+}
+
+.sneaker-photo, .sneaker-photo2 {
+    position: absolute;
+    transition: opacity 0.3s ease;
+}
+
+.sneaker-photo {
+    opacity: 1;
+}
+
+.sneaker-photo2 {
+    opacity: 0;
+}
+
+.sneaker-card:hover .sneaker-photo {
+    opacity: 0;
+}
+
+.sneaker-card:hover .sneaker-photo2 {
+    opacity: 1;
+}
+
+.btn-style {
+    opacity: 0;
+}
+
+.sneaker-card:hover .btn-style {
+    opacity: 1;
+}
+
+.sneaker-card:hover .price {
+    opacity: 0;
+}
+
+.sneaker-photo2 {
+    position: absolute;
+    top: 50px;
+}
+
+.btn-style {
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    background: rgb(59, 255, 59);
+    border: solid rgb(59, 255, 59);
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 84%;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+svg.icon.icon-tabler.icon-tabler-shopping-cart-filled {
+    margin: 0 6px;
+}
+
+.container-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container-info::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #bebebe;
+    margin-bottom: 7px;
+}
+
+.shoe-brand {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+    font-weight: 100;
+    margin: 1px 0;
+}
+
+.shoe-model {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px 0;
+}
+
+.price-before {
+    color: #868686;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.price {
+    font-family: Mulish,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #4e4e4e;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+    nav, .header-links {
+        display: none;
+}
+    
+      .header_link-wrapper:hover {
+        display: none;
+}
+    
+      .header_icon-container {
+        display: none;
+}
+    
+      .header_menu-container {
+        display: flex;
+}
+    
+      body {
+        margin: 0 30px;
+}
+
+}
+
+
+
+
+
+
+
+
